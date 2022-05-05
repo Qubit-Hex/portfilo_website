@@ -1,0 +1,80 @@
+/*
+  @file: main.css
+ 
+  @purpose: main css file for the project to load tailwindcss, other css stylings and files.
+
+*/
+
+/** imports */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shadow-custom {
+    box-shadow: rgba(6, 18, 37, 0.549) 2px 3px 6px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* CSS */
+.button-56 {
+    align-items: center;
+    background-color: #1c264a;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background: #1326923b;  
+
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #583838;
+    outline: 0;
+}
+
+.button-56:hover {
+    background-color: black;
+    outline: 0;
+}
+
+@media(min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
+}
