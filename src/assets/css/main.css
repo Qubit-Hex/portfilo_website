@@ -11,11 +11,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Radio+Canada&display=swap');
+
+
+html {
+    font-family: 'Changa', sans-serif;
+}
 
 .shadow-custom {
     box-shadow: rgba(6, 18, 37, 0.549) 2px 3px 6px;
     border: 2px solid rgb(255, 255, 255);
 }
+
+
+
+.line {
+    padding: 5px;
+    background-color: #1c4abfbd;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    /** roltate */
+    transform: rotate(180deg);
+}
+
+.card {
+    background-color: rgba(214, 227, 246, 0.223);
+    border-left: 10px solid #85a8ff3d;
+    border-right: 10px solid #6792ff3d;
+    border-bottom: 10px solid #5d8bff50;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 
 /* CSS */
 .button-56 {
@@ -64,7 +91,7 @@
 }
 
 .button-56:active {
-    background-color: #583838;
+    background-color: #341010;
     outline: 0;
 }
 
