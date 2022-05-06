@@ -1,9 +1,8 @@
 module.exports = {
-  content: ["./src/assets/**/*.{html, js, css}",
-            "./public/*.{html, js, css}"],
+  content: ["./src/assets/**/*.{js,css,html}",
+    "./public/*.{php, html, js, css}",],
   theme: {
-    extend: {
-    },  
+    extend: {},
   },
   plugins: [],
 }
