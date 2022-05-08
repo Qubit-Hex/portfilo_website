@@ -15,8 +15,11 @@
 
 html {
     font-family: 'Changa', sans-serif;
-    background-color: #d8d9fb15;
+    background-color: #fafafa;
 }
+
+
+
 
 .shadow-custom {
     box-shadow: rgba(6, 18, 37, 0.259) 2px -5px 15px;
@@ -27,25 +30,13 @@ html {
 .shadow-dark {
     box-shadow: rgba(6, 18, 37, 0.412) 9px 0px 12px;
     border: 1px solid rgba(121, 121, 121, 0.105);
-};
-
-.line {
-    padding: 5px;
-    background-color: #1c4abfbd;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-    /** roltate */
-    transform: rotate(180deg);
 }
 
-.card {
-    background-color: rgb(255, 255, 255);
-    border-left: 10px solid #85a8ff3d;
-    border-right: 10px solid #6792ff3d;
-    border-bottom: 10px solid #5d8bff50;
-    border-top: 10px solid #5d8bff50;
 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(39, 39, 39, 0.23) 0px 6px 6px;
-    border-radius: 10px;
+.moonlight {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -62,7 +53,7 @@ html {
     display: flex;
     font-family: Inter, sans-serif;
     font-size: 16px;
-    height: 48px;
+    height: 50px;
     justify-content: center;
     line-height: 24px;
     max-width: 100%;
@@ -114,12 +105,12 @@ html {
 
 
 .rotation-ball {
-    animation: rotation 5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: rotation 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 
 .main-fade {
-    animation: slideAndFade 8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: slideAndFade 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 
