@@ -5,18 +5,33 @@
 namespace controller;
 
 
-class baseclass {
+/**
+ * 
+ *  @function: BaseController 
+ * 
+ *  @purpose: in order to provide controller functionality to the application 
+ * 
+ */ 
+
+
+class BaseController {
 
     public $views = __DIR__ . '/../view/';
 
 
     public function __construct()
     {
-           
+        // load the request URI
         $this->request = preg_replace("@[/\\\]@", "", $_SERVER['REQUEST_URI']);
 
     }
 
+    /**
+     * 
+     *  @method: view 
+     * 
+     *  @purpose: inorder to load the view file of the application
+     */
 
     public function view($file){
 
@@ -28,8 +43,7 @@ class baseclass {
 
     }
 
-
-
+    
      /**
       *
       *  @public: doesViewExists 

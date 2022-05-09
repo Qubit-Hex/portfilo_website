@@ -87,27 +87,32 @@ document.addEventListener("DOMContentLoaded",  (e) => {
 
     // initialize the type writer
     const textContainer = document.getElementById('idea-text');
-    const msg = "What's your next idea?";
-    printMessage(textContainer, msg , 200);
 
+    if (textContainer) {
+        const msg = "What's your next idea?";
+        printMessage(textContainer, msg , 200);
+    }
 
     // form validation
-
+    
     const form = document.getElementById('contactForm');
     const submissions = document.getElementById('submissions');
 
+    if (form && submissions) {
 
-    submissions.addEventListener('submit', (e) => {
-        e.preventDefault();
-        validation(e);
-    });
+        submissions.addEventListener('submit', (e) => {
+            e.preventDefault();
+            validation(e);
+        });
 
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        console.log('form submitted');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log('form submitted');
 
-        return validation();
-    });
+            return validation();
+        });
+
+    }
 
 });

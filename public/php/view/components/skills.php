@@ -1,4 +1,4 @@
-<div class="flex flex-col lg:flex-row mx-auto mt-12">
+<div class="flex flex-col lg:flex-row mx-auto mt-12 mb-12">
             <div class="columns-1 p-10 text-center mx-auto">
                 <h1 class="text font-extrabold text-4xl text-blue-900 mt-10">What do I know?</h1>
                 <h2 class="text-lg font-extrabold text-slate-700 mt-4">
@@ -79,7 +79,7 @@
     </div>
 
 
-    <div class="flex flex-col lg:flex-row opacity-80 bg-white shadow-lg border-t border-b border-slate-300  mx-auto  justify-start align-baseline gap-3 p-6 mt-10" id="tools-panel">
+    <div class="flex flex-col lg:flex-row opacity-80 mb-4 bg-white shadow-lg border-t border-b border-slate-300  mx-auto  justify-start align-baseline gap-3 p-6 mt-10" id="tools-panel">
         <div class="flex-1">
             <h1 class="text-3xl font-extrabold mt-10 text-blue-900">
                 <span class="text-blue-700">Tools</span>

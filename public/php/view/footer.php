@@ -12,22 +12,8 @@
                             </h1>
                                 <ul class='flex justify-center mt-4 '>
                                     <li class='m-3'>
-                                        <a href='' class='text-black-500 hover:text-slate-400 hover:cursor-pointer'>
+                                        <a href='https://github.com/Qubit-Hex' class='text-black-500 hover:text-slate-400 hover:cursor-pointer'>
                                             <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                    </li>
-                              
-                                    <li class="m-3 hover:text-blue-600 hover:cursor-pointer">
-                                        <a href='' class='text-black-500'>
-                                            <!-- linkedin -->
-                                            <i class="fab fa-linkedin fa-3x"></i>
-                                        </a>
-                                    </li>
-
-                                    <li class="m-3 hover:text-sky-500">
-                                        <a href='' class='text-black-500'>
-                                            <!-- twitter -->
-                                            <i class="fab fa-twitter fa-3x"></i>
                                         </a>
                                     </li>
                                 </ul>

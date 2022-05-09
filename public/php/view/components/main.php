@@ -14,7 +14,7 @@
                         &ThinSpace;
                     </p>
                     <!-- make a colored circle div-->
-                    <a class="block mt-4 button-56 mx-auto w-48" role="button" href="#contactForm" > Let's Talk </a>
+                    <a class="block mt-4 button-56 mx-auto w-48" href='/contact' role="button" href="#contactForm" > Let's Talk </a>
 
 
                    

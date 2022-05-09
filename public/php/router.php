@@ -7,14 +7,12 @@
  *  @purpose: inorder to route requests based on the request method type 
  * 
  */
+namespace Routing;
+require_once(__DIR__ . '/Web.php');
 
-require_once( __DIR__ . '/web.php');
+use Routing\Web;
 
 class Router {
-
-    // @method: doesClassExist 
-    //
-    // @purpose: to check if a class exists 
 
 
     // strip any unwanted slashes from the request when parsing the request page that will want to see
@@ -29,11 +27,6 @@ class Router {
         }
         return false;
     }
-
-
-    public function index() {}
-
-    public function apples() {}
 
     /**
      * 
@@ -74,7 +67,7 @@ class Router {
     static function serve($requestType, $class, $method, $name) {
         // we need to following  trigger before lets the request through
         // to the web routes 
-    
+        
         // does the name exists and is the class exists ?
         if (!self::doesClassExists($class)) {
             return false;
@@ -84,24 +77,26 @@ class Router {
         if (!self::doesMethodExist($class, $method) || !self::getRequestTypeMatch($requestType)) {
             return false;
         }
+            // grab all the methods of a class 
+            return [
+                'class' => $class,
+                'method' => $method,
+                'name' => $name,
+                'request' => $requestType
+            ];
+        }
 
-        // inject a request token to the route'
+    /**
+     * 
+     *  @method: run 
+     * 
+     *  @purpose: to init the routing application  
+     */
 
-        $webInterface = new WEB();
-
-        // register the route in the web interface
-        return $webInterface->register($requestType, $class, $method, $name);
-    }
-
-
-
+     static function run()
+     {
+        return new  Web;
+     }
 }
-
-
-
-
-
-
-
 
 ?>

@@ -8,13 +8,18 @@
  * 
  */
 
- require(__DIR__ . '/php/router.php');
+namespace App;
+require_once(__DIR__ . '/php/router.php');
+use Routing\Router;
 
 
- class App {
+
+
+ class Boot {
 
 // the default directory for the views of the application 
    private $views = __DIR__ . '/php/view/';
+   const SERVICE_DIR = __DIR__ . '/php/services/';
 
 
     public function __construct()
@@ -27,6 +32,44 @@
         $this->rateLimit = 20;
     }
 
+    /***
+     * 
+     *  @method: services 
+     * 
+     *  @purpose: to initilze any service we want to run 
+     * 
+     */
+
+     static function services()
+     {
+         // load any services before the boot operation
+         // note: all service must have a mount() method
+         // it will be call once the class is initilize upon the array 
+         $services = Array(
+             // example service
+           # 'MAIL' => 'new ExampleService()',
+
+         );
+
+         foreach ($services as $key => $value) {
+            // add some error handling the init method.
+             self::mountService($value->mount());
+         }
+         // run the routing operatations
+         return Router::class::run();
+     }
+
+     /**
+      *   @method: mountService 
+      *
+      *  @purpose: inorder to mount the services that we are going to register to the application 
+      *
+      */
+
+      static function mountService($serviceClass) {
+          return $serviceClass->mount();
+      }
+
 
      /**
       *  @method: run 
@@ -37,30 +80,17 @@
 
       public function run()
       {
-        // anything special we need todo before loading our application ?
-        // put it here 
-        setcookie("PROC_INJECTION", bin2hex(random_bytes(64)));
-        setcookie("RATE_LIMITER", 0);
-        if (isset($_COOKIE['RATE_LIMITER'])) {
-            // CHECK IF A MINUTE HAS PASS SINCE OR FIRST REQUEST 
-            // AND RESET EVERY MINUTE THIS IS TO PREVENT BOTS FROM 
-            // PREFORMING UNAUTHORIZED REQUESTS.
-            $_COOKIE['RATE_LIMITER']++;
-        }
+        // Load any services before init the application 
 
-
-        
+        return self::services();
     }
 
  }
 
+ $bootstrap = new Boot();
 
 
+ return $bootstrap->run();
 
 
-
-$bootstrap = new App();
-
-// run the application 
-return $bootstrap->run();
-?>
+ ?>

@@ -16,14 +16,13 @@
 
 
 
- class home extends baseclass {
+ class home extends BaseController {
 
 
     public function __construct()
     {
       
     }
-
 
     /**
      *  
@@ -68,6 +67,32 @@
        {
            return $this->view('header') . $this->view('/components/projects') . $this->view('footer');
        }
+       
+       /**
+        *   @method: nfld_law_project 
+        *
+        *  @purpose: to display the projects information 
+        *
+        */
+
+        public function nfld_law_project()
+        {
+          echo "hello";
+        }
+
+        /**
+         * 
+         *  @method: cloud_chef_project 
+         * 
+         * 
+         *  @purpose: inprder display the project information 
+         * 
+         */
+
+         public function cloud_chef_project()
+         {
+            echo  "TEST 2 ";
+         }
 
        /**
         *  @methos: contact 
@@ -80,6 +105,19 @@
        {
            return $this->view('header') . $this->view('/components/contact') . $this->view('footer');
        }
+
+
+       /**
+        *  @method: sendMail
+        *
+        * @purpose: inorder to send mail to owner of the website incase some one fills out the contact 
+        * 
+        */  
+
+        public function sendMail()
+        {
+            
+        }
 
  }
 

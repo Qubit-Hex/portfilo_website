@@ -41,7 +41,7 @@
                 
                 
                 <div class="mt-4">
-                    <a href='' class="button-56 p-4 rounded-lg  mx-auto shadow-lg border border-slate-200">
+                    <a href='/projects/cloudchef/' class="button-56 p-4 rounded-lg  mx-auto shadow-lg border border-slate-200">
                         Tell me more
                     </a>
                 </div>
@@ -85,14 +85,14 @@
                         Links
                     </li>
                     <li class='m-3'>
-                        <a href='' class='text-black-500 hover:text-blue-900'>
+                        <a href='https://github.com/Qubit-Hex' class='text-black-500 hover:text-blue-900'>
                             <i class="fab fa-github fa-2x"></i>
                             <span> CODE </span>
                         </a>
                     </li>
                   
                     <li class='m-3'>
-                        <a href='' class='text-black-500 hover:text-blue-900'>
+                        <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-blue-900'>
                             <!-- globe -->
                             <i class="fas fa-globe fa-2x"></i>
                             <span> LIVE SITE </span>
@@ -124,7 +124,7 @@
                         
                         
                         <div class="mt-4">
-                            <a  href='' class="button-56 p-4 rounded-lg  mx-auto shadow-lg border border-slate-200">
+                            <a  href='/projects/nfldlaw/' class="button-56 p-4 rounded-lg  mx-auto shadow-lg border border-slate-200">
                                 Tell me more
                             </a>
                         </div>
@@ -156,7 +156,7 @@
                                 Links
                             </li>
                             <li class='m-3'>
-                                <a href='' class='text-black-500 hover:text-blue-700'>
+                                <a href='https://github.com/Qubit-Hex/' class='text-black-500 hover:text-blue-700'>
                                     <i class="fab fa-github fa-2x"></i>
                                     <span> CODE </span>
                                 </a>
