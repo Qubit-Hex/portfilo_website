@@ -53,27 +53,27 @@
                     </li>
 
                     <li class="m-3">
-                        <i class="fa-brands fa-react fa-2x text-blue-400"></i>
+                        <i class="fa-brands fa-react fa-3x text-blue-400"></i>
                         <span>React</span>
                     </li>
 
                     <li class="m-3">
-                        <i class="fa-brands fa-php fa-2x text-purple-400"></i>
+                        <i class="fa-brands fa-php fa-3x text-purple-400"></i>
                         <span> PHP </span>
                     </li>
 
                     <li class="m-3">
-                        <i class="fa-brands fa-js fa-2x text-yellow-400"></i>
+                        <i class="fa-brands fa-js fa-3x text-yellow-400"></i>
                         <span> JavaScript </span>
                     </li>
 
                     <li class="m-3">
-                        <i class="fa-brands fa-laravel fa-2x text-red-500"></i>
+                        <i class="fa-brands fa-laravel fa-3x text-red-500"></i>
                         <span> Laravel </span>
                     </li>
 
                     <li class="m-3">
-                        <i class="fa-brands fa-bootstrap fa-2x text-purple-500"></i>
+                        <i class="fa-brands fa-bootstrap fa-3x text-purple-500"></i>
                         Bootstrap
                     </li>
                 </ul>
@@ -86,7 +86,7 @@
                     </li>
                     <li class='m-3'>
                         <a href='https://github.com/Qubit-Hex/cloudChef/' class='text-black-500 hover:text-slate-600' target='blank'>
-                            <i class="fab fa-github fa-2x"></i>
+                            <i class="fab fa-github fa-3x"></i>
                             <span> CODE </span>
                         </a>
                     </li>
@@ -94,7 +94,7 @@
                     <li class='m-3'>
                         <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-slate-600' target="blank">
                             <!-- globe -->
-                            <i class="fas fa-globe fa-2x"></i>
+                            <i class="fas fa-globe fa-3x"></i>
                             <span> LIVE SITE </span>
                         </a>
                     </li>
@@ -135,16 +135,16 @@
                                 Tech Stack
                             </li>
                             <li class="m-3">
-                                <i class="fa-brands fa-php fa-2x text-purple-500"></i>
+                                <i class="fa-brands fa-php fa-3x text-purple-500"></i>
                                 <span> PHP </span>
                             </li>
                             
                             <li class="m-3">
-                                <i class="fa-brands fa-js fa-2x text-yellow-400"></i>
+                                <i class="fa-brands fa-js fa-3x text-yellow-400"></i>
                                 <span> JavaScript</span>
                             </li>
                             <li class="m-3">
-                                <i class="fa-brands fa-bootstrap fa-2x text-purple-500"></i>
+                                <i class="fa-brands fa-bootstrap fa-3x text-purple-500"></i>
                                 Bootstrap
                             </li>
                          
@@ -157,7 +157,7 @@
                             </li>
                             <li class='m-3'>
                                 <a href='https://github.com/Qubit-Hex/NFLD_LAW/' target="blank" class='text-black-500 hover:text-slate-600'>
-                                    <i class="fab fa-github fa-2x"></i>
+                                    <i class="fab fa-github fa-3x"></i>
                                     <span> CODE </span>
                                 </a>
                             </li>
@@ -165,7 +165,7 @@
                             <li class='m-3'>
                                 <a href='' class='text-black-500 hover:text-slate-600' target="blank">
                                     <!-- globe -->
-                                    <i class="fas fa-globe fa-2x"></i>
+                                    <i class="fas fa-globe fa-3x"></i>
                                     <span> LIVE SITE </span>
                                 </a>
                             </li>

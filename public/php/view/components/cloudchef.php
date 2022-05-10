@@ -167,8 +167,8 @@
 
                     <div class='text-lg text-slate-900 mt-5'>
                         <b> Username:  <span class='font-normal'> demo@example.com </span> </b> <br/>
-                        <b> Password:  <span class='font-normal'> demo </span></b>  <br/>
-                        <b> Store ID:  <span class='font-normal'> 2 </span> </b>   <br/>
+                        <b> Password:  <span class='font-normal'> demoaccount </span></b>  <br/>
+                        <b> Store ID:  <span class='font-normal'> 3 </span> </b>   <br/>
                     </div>
 
 
