@@ -12,7 +12,7 @@
                     <img src="/assets//images/svg/brianstorm.svg" alt="Me" class="w-auto h-auto mx-auto" />
                 </div>
                 <p class="text-xl font-semibold text-slate-800 mt-4">
-                    How would I help your team you may ask?  <br /><br/>
+                    How would I help your team you may ask?  <br />
                     Here is some of the technologies I know and currently work with.
                 </p>
             </div>

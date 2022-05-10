@@ -9,7 +9,7 @@ namespace controller;
  * 
  *  @function: BaseController 
  * 
- *  @purpose: in order to provide controller functionality to the application 
+ *  @purpose: in order to provide controller functionality to the application this will be an inherited class
  * 
  */ 
 
@@ -35,12 +35,11 @@ class BaseController {
 
     public function view($file){
 
-        if ($this->doesViewExists($this->views . $file . '.php') === true) {
-            return $this->doesViewExists($this->views . $file . '.php');
+        if ($this->doesViewExists($this->views . $file . '.php')) {
+            return include_once($this->views . $file . '.php');
         }
 
         return include_once($this->views . $file . '.php');
-
     }
 
     

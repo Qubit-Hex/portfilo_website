@@ -8,7 +8,7 @@
                 </h1>
     
             <p class="text-lg font-semibold text-slate-700 mt-4">
-                The meat and potatoes  <br/>
+                
                 Here is some of the projects I have worked on in the past.
             </p>   
             </div>
@@ -85,14 +85,14 @@
                         Links
                     </li>
                     <li class='m-3'>
-                        <a href='https://github.com/Qubit-Hex' class='text-black-500 hover:text-blue-900'>
+                        <a href='https://github.com/Qubit-Hex/cloudChef/' class='text-black-500 hover:text-sky-800'>
                             <i class="fab fa-github fa-2x"></i>
                             <span> CODE </span>
                         </a>
                     </li>
                   
                     <li class='m-3'>
-                        <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-blue-900'>
+                        <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-sky-800'>
                             <!-- globe -->
                             <i class="fas fa-globe fa-2x"></i>
                             <span> LIVE SITE </span>
@@ -156,14 +156,14 @@
                                 Links
                             </li>
                             <li class='m-3'>
-                                <a href='https://github.com/Qubit-Hex/' class='text-black-500 hover:text-blue-700'>
+                                <a href='https://github.com/Qubit-Hex/NFLD_LAW/' class='text-black-500 hover:text-sky-800'>
                                     <i class="fab fa-github fa-2x"></i>
                                     <span> CODE </span>
                                 </a>
                             </li>
                          
                             <li class='m-3'>
-                                <a href='' class='text-black-500 hover:text-blue-700'>
+                                <a href='' class='text-black-500 hover:text-sky-800'>
                                     <!-- globe -->
                                     <i class="fas fa-globe fa-2x"></i>
                                     <span> LIVE SITE </span>

@@ -77,7 +77,7 @@
 
         public function nfld_law_project()
         {
-          echo "hello";
+          return $this->view('header') . $this->view('/components/nfldlaw') . $this->view('footer');
         }
 
         /**
@@ -91,7 +91,7 @@
 
          public function cloud_chef_project()
          {
-            echo  "TEST 2 ";
+            return $this->view('header') . $this->view('/components/cloudchef') . $this->view('footer');
          }
 
        /**

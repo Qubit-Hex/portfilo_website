@@ -8,9 +8,11 @@
  * 
  */
 namespace Routing;
+
 require_once(__DIR__ . '/Web.php');
 
 use Routing\Web;
+use App\Boot;
 
 class Router {
 
@@ -64,9 +66,9 @@ class Router {
      *  @purpose: inorder to serve requests  that are being passed to the server
      */
 
-    static function serve($requestType, $class, $method, $name) {
+    static function serve($requestType, $class, $method, $name, $hooks = null) {
         // we need to following  trigger before lets the request through
-        // to the web routes 
+        // to the web routes
         
         // does the name exists and is the class exists ?
         if (!self::doesClassExists($class)) {
@@ -82,7 +84,8 @@ class Router {
                 'class' => $class,
                 'method' => $method,
                 'name' => $name,
-                'request' => $requestType
+                'request' => $requestType,
+                'hooks' => $hooks
             ];
         }
 
@@ -95,6 +98,20 @@ class Router {
 
      static function run()
      {
+
+        // hooks for the application... 
+        $currentApplicationHooks =  [
+            // name of the hook => the hook
+        ];
+
+        // run all the hooks 
+        foreach ($currentApplicationHooks as $hookName => $hook) {
+            if ($hook()->run() === false) {
+                // return a http_error and stop the application
+                return Boot::class::kill();
+            }
+        }
+        // push the request to the web interface. 
         return new  Web;
      }
 }

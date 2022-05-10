@@ -7,8 +7,8 @@
                         <div class="flex-1 text-center text-white">
                             <h1 class="text-xl font-extrabold mt-10 text-blue-900">
                                 <!-- quote from my favorite computer scientist -->
-                                <span class="text-slate-600">" You can't trust code that you did not totally create yourself." </span><br/>
-                                <span class="text-slate-600">- <i>Ken Thompson </i> </span>
+                                <span class="text-slate-200">" You can't trust code that you did not totally create yourself." </span><br/>
+                                <span class="text-slate-200">- <i>Ken Thompson </i> </span>
                             </h1>
                                 <ul class='flex justify-center mt-4 '>
                                     <li class='m-3'>

@@ -81,6 +81,42 @@ const validation = (e) => {
 }
 
 
+/**
+ *  @function: cloudChefScreenshots
+ * 
+ *  @purpose: inorder to active the cloud chef screenshots 
+ * 
+ * 
+ *  might add parms to the function in the future inorder for me not to repeat the code not sure yet though. 
+ * 
+ */
+
+const loadScreenShots = (image1, image2, image3) => {
+    // load the buttons and listeners for the cloud chef screenshots
+    const modal = document.getElementById('modal');
+    const screen1 = document.getElementById('screen1');
+    const screen2 = document.getElementById('screen2');
+    const screen3 = document.getElementById('screen3');
+    const screenShotContainer = document.getElementById('screenshot');
+
+    // activate the screenshots for each of the applications 
+    screen1.addEventListener('click', (e) => {
+        modal.style.display = 'block';
+        screenShotContainer.src = image1;
+    });
+
+    screen2.addEventListener('click', () => {
+        modal.style.display = 'block';
+        screenShotContainer.src = image2;
+    }); 
+
+    screen3.addEventListener('click', () => {
+        modal.style.display = 'block';
+        screenShotContainer.src = image3;
+    });
+
+
+}
 
 // main section of the code. 
 document.addEventListener("DOMContentLoaded",  (e) => {
@@ -114,5 +150,30 @@ document.addEventListener("DOMContentLoaded",  (e) => {
         });
 
     }
+
+
+        // the modal trigger 
+
+        const modal = document.getElementById('modal');
+        const modalClose = document.getElementById('modal-close');
+
+        // check if the id is active and if the modal is active then execute the 
+        // required actions 
+        if (modal && modalClose) {
+
+            modalClose.addEventListener('click', () => {
+                modal.style.display = 'none';
+            }); 
+            // check which page we are accessing 
+            const _cloudchef_ = document.getElementById('cloudchefLanding');
+            if(_cloudchef_) {
+                // activate the screen shots triggers... 
+                loadScreenShots(
+                    '/assets/images/recipes_screenshot.png',
+                    '/assets/images/dashboard_screenshot.png',
+                    '/assets/images/employee_screenshot.png'
+                );
+            }
+        }
 
 });

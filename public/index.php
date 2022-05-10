@@ -10,6 +10,7 @@
 
 namespace App;
 require_once(__DIR__ . '/php/router.php');
+
 use Routing\Router;
 
 
@@ -32,6 +33,23 @@ use Routing\Router;
         $this->rateLimit = 20;
     }
 
+    /**
+     *  
+     *  @method: kill
+     * 
+     * 
+     *  @purpose: inorder to send a http response to the client and kill the application
+     * 
+     */
+
+     static function kill()
+     {
+            header('HTTP/1.1 404 Not Found');
+            header('Content-Type: application/json');
+            echo json_encode(['message' => '404 Not Found']);
+            die();
+     }
+
     /***
      * 
      *  @method: services 
@@ -47,7 +65,7 @@ use Routing\Router;
          // it will be call once the class is initilize upon the array 
          $services = Array(
              // example service
-           # 'MAIL' => 'new ExampleService()',
+           # 'MAIL' => new ExampleService(),
 
          );
 
