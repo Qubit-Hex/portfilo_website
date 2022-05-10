@@ -82,17 +82,17 @@
 
                 <li class='m-2'>
                     <button class='button-17 p-4' id='screen1'> Home Page</button>
-                    <img src='/assets/images/recipes_screenshot.png' alt='screenshot1' class='mt-6  shadow-dark'>
+                    <img src='/assets/images/nfldlaw.png' alt='screenshot1' class='mt-6  shadow-dark'>
                 </li>
 
                 <li class='m-2'>
                     <button class='button-17' id='screen2'> Dashboard </button>
-                    <img src='/assets/images/dashboard_screenshot.png' alt='screenshot2' class='mt-6 shadow-dark'>
+                    <img src='/assets/images/nfldlaw.png' alt='screenshot2' class='mt-6 shadow-dark'>
                 </li>
 
                 <li class='m-2'>
                     <button class='button-17' id='screen3'>  Legal Document </button>
-                    <img src='/assets/images/employee_screenshot.png' alt='screenshot3' class='mt-6 shadow-dark'>
+                    <img src='/assets/images/nfldlaw.png' alt='screenshot3' class='mt-6 shadow-dark'>
                 </li>
             </ul>
         </section>

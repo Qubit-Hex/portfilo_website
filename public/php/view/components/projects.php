@@ -85,14 +85,14 @@
                         Links
                     </li>
                     <li class='m-3'>
-                        <a href='https://github.com/Qubit-Hex/cloudChef/' class='text-black-500 hover:text-sky-800'>
+                        <a href='https://github.com/Qubit-Hex/cloudChef/' class='text-black-500 hover:text-slate-600' target='blank'>
                             <i class="fab fa-github fa-2x"></i>
                             <span> CODE </span>
                         </a>
                     </li>
                   
                     <li class='m-3'>
-                        <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-sky-800'>
+                        <a href='https://cloud-chef.ca/' class='text-black-500 hover:text-slate-600' target="blank">
                             <!-- globe -->
                             <i class="fas fa-globe fa-2x"></i>
                             <span> LIVE SITE </span>
@@ -156,14 +156,14 @@
                                 Links
                             </li>
                             <li class='m-3'>
-                                <a href='https://github.com/Qubit-Hex/NFLD_LAW/' class='text-black-500 hover:text-sky-800'>
+                                <a href='https://github.com/Qubit-Hex/NFLD_LAW/' target="blank" class='text-black-500 hover:text-slate-600'>
                                     <i class="fab fa-github fa-2x"></i>
                                     <span> CODE </span>
                                 </a>
                             </li>
                          
                             <li class='m-3'>
-                                <a href='' class='text-black-500 hover:text-sky-800'>
+                                <a href='' class='text-black-500 hover:text-slate-600' target="blank">
                                     <!-- globe -->
                                     <i class="fas fa-globe fa-2x"></i>
                                     <span> LIVE SITE </span>
