@@ -11,6 +11,8 @@
     <meta name="description" content="Oliver Shwaba web developer portfolio" />
     <meta name="keywords" content="oliver shwaba web developer software programming portfolio" />
 
+    <!-- favicon -->
+    <link rel="icon" href="/assets/images/logo/outline.png" type="image/png" sizes="16x16">
     <!-- assets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="/assets/css/all.css" />

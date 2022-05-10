@@ -28,7 +28,7 @@
                     </h1>   
                 
 
-                <ul class="flex mx-auto font-semibold text-slate-900 mt-4 rounded-md">
+                <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">
 
                     <li class="m-3">
                         <i class="fab fa-html5 fa-4x font-bold text-red-500"></i>
@@ -62,7 +62,7 @@
                 </h1>  
               
 
-                <ul class="inline-flex mx-auto font-semibold text-slate-900 mt-4 rounded-md">
+                <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">
                     <li class='m-3'>
                         <i class="fab fa-php fa-4x font-bold text-indigo-800"></i>
                         <span> PHP </span>
@@ -85,7 +85,7 @@
                 <span class="text-blue-700">Tools</span>
             </h1> 
          
-            <ul class="inline-flex mx-auto font-semibold text-slate-900 mt-4 rounded-md">
+            <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">
                 <li class='m-3'>
                     <i class="fab fa-git-alt fa-4x font-bold text-green-500"></i>
                     <span> Git </span>
@@ -104,7 +104,7 @@
                 <span class="text-blue-700">FrameWorks</span>
             </h1>
       
-            <ul class="flex mx-auto font-semibold text-slate-900 mt-4 rounded-md">
+            <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">
                 <li class='m-3'>
                     <i class="fab fa-react fa-4x font-bold text-blue-500"></i>
                     <span> React </span>
