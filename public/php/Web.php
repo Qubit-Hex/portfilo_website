@@ -34,11 +34,11 @@ use Hooks;
     public function __construct()
     {
         // load any headers we need to set
+
         header('X-token:' . hash('sha256', time()));
         
         $this->run();
     }
-
 
     /**
      *  
@@ -92,6 +92,8 @@ use Hooks;
 
     public function handleMultipleRoute($url)
     {
+        // does our token header exist? 
+        
         if (sizeof($url) > 1 ) {
             foreach($this->routes as $route) {
                 $route['name'] = explode('/', $route['name']);

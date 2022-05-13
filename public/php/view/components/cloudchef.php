@@ -99,7 +99,7 @@
 
                 <li class='m-2'>
                     <button class='button-17 p-4' id='screen1'> Recipe Section </button>
-                    <img src='/assets/images/recipes_screenshot.png' alt='screenshot1' class='mt-6  shadow-dark'>
+                    <img src='/assets/images/recipes_screenshot.png' alt='screenshot1' class='mt-6  shadow-dark rounded-lg '>
                 </li>
 
                 <li class='m-2'>
@@ -148,7 +148,7 @@
         </section>
 
 
-        <section class='mt-10 bg-slate-50 shadow-xl rounded-md p-5' >
+        <section class='mt-20  mb-10 bg-slate-50 shadow-lg rounded-md p-5' >
             <div class='text-center'>
                 <h1 class='text-4xl font-bold text-blue-900'> Demo </h1>
 

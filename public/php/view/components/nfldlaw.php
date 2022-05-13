@@ -130,9 +130,7 @@
                 <h2 class='text-xl text-gray-800'> Take a tour of the application to see first hand. </h2>
                 <!-- embedded youtube video -->
                 <div class='embed-responsive embed-responsive-16by9 mx-auto'>
-                    <iframe class="mx-auto mt-4 mb-4" width="500" height="250" src="https://www.youtube.com/embed/DymnqkN2b3s" 
-                        title="Demo Video" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
                 </div>
             </div>
         </section>
