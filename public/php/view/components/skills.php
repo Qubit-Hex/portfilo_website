@@ -22,7 +22,7 @@
 
         <div class="flex flex-col lg:flex-row lg:flex bg-white shadow-lg border-t border-b border-slate-300 justify-start align-baseline gap-3 p-6 mt-10 mx-auto" id="frontend-panel" id=='half'>
 
-                <div class="flex-1">
+                <div class="flex-1 text-center lg:text-left">
                     <h1 class="text-3xl font-extrabold mt-10 text-blue-900">
                         <span class="text-blue-700">Frontend</span>
                     </h1>   
@@ -56,7 +56,7 @@
             </div>
            
 
-            <div class="flex-1">
+            <div class="flex-1 text-center lg:text-left">
                 <h1 class="text-3xl font-extrabold mt-10 text-blue-900">
                     <span class="text-blue-700">Backend</span>
                 </h1>  
@@ -80,12 +80,12 @@
 
 
     <div class="flex flex-col lg:flex-row opacity-80 mb-4 bg-white shadow-lg border-t border-b border-slate-300  mx-auto  justify-start align-baseline gap-3 p-6 mt-10" id="tools-panel">
-        <div class="flex-1">
+        <div class="flex-1 text-center lg:text-left">
             <h1 class="text-3xl font-extrabold mt-10 text-blue-900">
                 <span class="text-blue-700">Tools</span>
             </h1> 
          
-            <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">
+            <ul class="flex flex-col lg:flex-row font-semibold text-slate-900 mt-4 rounded-md">
                 <li class='m-3'>
                     <i class="fab fa-git-alt fa-4x font-bold text-green-500"></i>
                     <span> Git </span>
@@ -99,9 +99,9 @@
             </ul>
         </div> 
     
-        <div class="flex-1">
+        <div class="flex-1 text-center lg:text-left">
             <h1 class="text-3xl font-extrabold mt-10 text-blue-900">
-                <span class="text-blue-700">FrameWorks</span>
+                <span class="text-blue-700">Frameworks</span>
             </h1>
       
             <ul class="flex flex-col lg:flex-row mx-auto font-semibold text-slate-900 mt-4 rounded-md">

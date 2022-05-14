@@ -1580,6 +1580,26 @@ html {
     align-items: flex-end;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-center {
+    text-align: center;
+  }
+
+  .lg\:text-justify {
+    text-align: justify;
+  }
+
+  .lg\:align-middle {
+    vertical-align: middle;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
