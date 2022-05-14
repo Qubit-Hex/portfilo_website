@@ -74,7 +74,7 @@
 
 
         <!-- screen shot of the application -->
-        <section class='w-full mt-10 bg-slate-50 shadow-lg p-5' id='cloudchefLanding'>
+        <section class='w-full mt-10 bg-slate-50 shadow-lg p-5' id='nfldlawContainer'>
             <h3 class='text-xl lg:text-4xl font-bold text-gray-800'> Screenshots </h3>
             <div class='border-b border-slate-200 mt-4'></div>
 
@@ -82,29 +82,21 @@
 
                 <li class='m-2'>
                     <button class='button-17 p-4' id='screen1'> Home Page</button>
-                    <img src='/assets/images/nfldlaw.png' alt='screenshot1' class='mt-6  shadow-dark'>
+                    <img src='/assets/images/screenshots/nfldlaw/nfldlaw_home.png' alt='screenshot1' class='mt-6  shadow-dark'>
                 </li>
 
                 <li class='m-2'>
-                    <button class='button-17' id='screen2'> Dashboard </button>
-                    <img src='/assets/images/nfldlaw.png' alt='screenshot2' class='mt-6 shadow-dark'>
-                </li>
-
-                <li class='m-2'>
-                    <button class='button-17' id='screen3'>  Legal Document </button>
-                    <img src='/assets/images/nfldlaw.png' alt='screenshot3' class='mt-6 shadow-dark'>
+                    <button class='button-17' id='screen2'> Login Page </button>
+                    <img src='/assets/images/screenshots/nfldlaw/login_nfldlaw.png' alt='screenshot2' class='mt-6 shadow-dark'>
                 </li>
             </ul>
         </section>
 
 
-        <section class='mt-10 bg-slate-50 shadow-lg p-20'>
+        <section class='mt-10 bg-slate-50 shadow-lg p-20 text-center lg:text-left'>
             <h4 class='text-4xl font-bold text-gray-800'> Tech Stack </h4>
 
-            <ul class="flex flex-col lg:flex-row justify-center align-middle font-bold mt-2">
-                  
-                  
-
+            <ul class="flex flex-col lg:flex-row font-bold mt-2">             
                     <li class="m-3">
                         <i class="fa-brands fa-php fa-4x  text-purple-400"></i>
                         <span> PHP </span>
@@ -126,13 +118,32 @@
 
         <section class='mt-10 bg-slate-50 shadow-xl rounded-md p-5' >
             <div class='text-center'>
-                <h1 class='text-4xl font-bold text-blue-900'> Demo video </h1>
-                <h2 class='text-xl text-gray-800'> Take a tour of the application to see first hand. </h2>
-                <!-- embedded youtube video -->
-                <div class='embed-responsive embed-responsive-16by9 mx-auto'>
-                  
+                    <h1 class='text-4xl font-bold text-blue-900'> Demo </h1>
+
+                    <h2 class='text-xl text-gray-800'> Take a tour of the application to see first hand. </h2>
+
+                    <div class='flex flex-col lg:flex-row flex-wrap'>
+                        <div class='mx-auto'>
+                            <img src='/assets/images/svg/authentication.svg' alt='screenshot1' class='w-72 h-72 border-slate-300' />
+                        </div>  
+                    </div>
+
+
+                        <div>
+                            <h1 class='text-4xl text-blue-900 font-bold'> Login </h1>
+                        </div>
+
+                        <div class='text-lg text-slate-900 mt-5'>
+                            <b> Username:  <span class='font-normal'> demo@example.com </span> </b> <br/>
+                            <b> Password:  <span class='font-normal'> demoaccount </span></b>  <br/>
+                        </div>
+
+                        
+                        <div class='text-xl w-auto lg:w-1/2 mt-10 mx-auto text-slate-800'>
+                            <a class='button-56 button-blue-600' href='https://nfldlegal.com/home/login'> Take me to Demo  </a>
+                        </div>
+
                 </div>
-            </div>
         </section>
         
     </div>
