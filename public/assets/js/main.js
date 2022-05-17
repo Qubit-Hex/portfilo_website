@@ -91,16 +91,14 @@ const validation = (e) => {
  * 
  */
 
-const loadScreenShots = (image1, container) => {
+const loadScreenShots = (image1) => {
     // load the buttons and listeners for the cloud chef screenshots
     const modal = document.getElementById('modal');
     const screenShotContainer = document.getElementById('screenshot');
 
-    // activate the screenshots for each of the applications 
-    container.addEventListener('click', (e) => {
-        modal.style.display = 'block';
-        screenShotContainer.src = image1;
-    });
+    modal.style.display = 'block';
+    modal.style.zIndex = '1';
+    screenShotContainer.src = image1;
 }
 
 // main section of the code. 
@@ -144,16 +142,12 @@ document.addEventListener("DOMContentLoaded",  (e) => {
         if (modal && modalClose) {
 
             // check if the modal is activated or not..
-            if (modal.style.display != 'none')
+            if (modal.style.display !== 'none')
             {
-                document.addEventListener('click', (e) => {
-                    modal.style.display = 'none';
-                });
-
                 modalClose.addEventListener('click', () => {
                     modal.style.display = 'none';
                 }); 
-            }
+            } 
 
             // check which page we are accessing 
             const _cloudchef_ = document.getElementById('cloudchefLanding');
@@ -165,10 +159,21 @@ document.addEventListener("DOMContentLoaded",  (e) => {
                 const screen2 = document.getElementById('screen2');
                 const screen3 = document.getElementById('screen3');
 
-                loadScreenShots('/assets/images/recipes_screenshot.png', screen1);
-                loadScreenShots('/assets/images/dashboard_screenshot.png', screen2);
-                loadScreenShots('/assets/images/employee_screenshot.png', screen3);
+                screen1.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                    loadScreenShots('/assets/images/recipes_screenshot.png');
 
+                });
+
+                screen2.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                    loadScreenShots('/assets/images/dashboard_screenshot.png');
+                });
+
+                screen3.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                    loadScreenShots('/assets/images/employee_screenshot.png');
+                }); 
             }
 
             // check if the nfldlaw page is active
@@ -177,9 +182,17 @@ document.addEventListener("DOMContentLoaded",  (e) => {
                 const screen1 = document.getElementById('screen1');
                 const screen2 = document.getElementById('screen2');
 
-                // load the newfoundland project screenshots of application. 
-                loadScreenShots('/assets/images/screenshots/nfldlaw/nfldlaw_home.png', screen1);
-                loadScreenShots('/assets/images/screenshots/nfldlaw/login_nfldlaw.png', screen2);
+                screen1.addEventListener('click', (e) => {                 
+                    modal.style.display = 'block';
+                    loadScreenShots('/assets/images/screenshots/nfldlaw/nfldlaw_home.png');
+                });
+
+
+                screen2.addEventListener('click', (e) => {
+                    modal.style.display = 'block';
+                    loadScreenShots('/assets/images/screenshots/nfldlaw/login_nfldlaw.png');
+                });
+
             }
         }
         

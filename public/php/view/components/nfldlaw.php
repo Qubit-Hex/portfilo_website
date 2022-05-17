@@ -2,7 +2,7 @@
 
 <!-- modal  !-->
 
-<div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal" id="modal">
     <div class="modal-dialog h-fit fade">
             <div class="modal-header">
                 <span class="modal-title" id="modalTitle">Screen Shots </span>
