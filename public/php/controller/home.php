@@ -11,10 +11,7 @@
  */
 
  namespace controller;
-
- require_once(__DIR__ . '/baseclass.php');
-
-
+ require_once(__DIR__ . '/baseclass.php'); 
 
  class home extends BaseController {
 
@@ -103,6 +100,7 @@
 
        public function contact()
        {
+   
            return $this->view('header') . $this->view('/components/contact') . $this->view('footer');
        }
 
@@ -115,10 +113,14 @@
         */  
 
         public function sendMail()
-        {
-            
-        }
+        {   
 
+            die(json_encode([
+               'status' => true,
+               'message' => 'mail sent successfully, thank you for contacting me'
+            ]));
+
+         }
  }
 
 

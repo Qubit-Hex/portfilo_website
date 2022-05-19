@@ -309,6 +309,10 @@ html {
     animation: fade 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+.zip-fade {
+    animation: zip-fade 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 @keyframes fade {
     0% {
         opacity: 0;

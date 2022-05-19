@@ -257,6 +257,10 @@ use Hooks;
         $this->publishRoute('GET', new home, 'contact', '/contact/');
         $this->publishRoute('GET', new home, 'nfld_law_project', '/projects/nfldlaw/');
         $this->publishRoute('GET', new home, 'cloud_chef_project', '/projects/cloudchef/');
+
+        $this->publishRoute('POST', new home, 'sendMail', '/api/mail');
+
+
         $this->publishRoute('GET', new home, 'index', '/');
 
         // we wont return the routes to the application

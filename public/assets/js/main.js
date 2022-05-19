@@ -58,6 +58,13 @@ const validation = (e) => {
         'Accept': 'application/json'
     }
 
+
+    const data = {
+        name: name.value,
+        email: email.value,
+        message: message.value,
+    };
+
     let counter = 0;
 
     if (name.value.length < 3) {
@@ -77,7 +84,7 @@ const validation = (e) => {
         return false;
     }
 
-    return api.get('/api/contact', headers);
+    return api.post('/api/mail/', data , headers);
 }
 
 
@@ -117,6 +124,7 @@ document.addEventListener("DOMContentLoaded",  (e) => {
     const form = document.getElementById('contactForm');
     const submissions = document.getElementById('submissions');
 
+
     if (form && submissions) {
 
         submissions.addEventListener('submit', (e) => {
@@ -127,12 +135,36 @@ document.addEventListener("DOMContentLoaded",  (e) => {
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            console.log('form submitted');
+            let responseContainer = document.getElementById('emailResponse');
+            let contactContainer = document.getElementById('contactContainer');
+            // render templates for the messages of the response. 
+            let successTemplate = document.getElementById('messageSuccess');
+            let errorTemplate = document.getElementById('messageError');
 
-            return validation();
+            let successCln = successTemplate.content.cloneNode(true);
+            let errorCln = errorTemplate.content.cloneNode(true);
+
+            // check the async call and render the appropriate message
+            // based on the response that we recieve from the server.
+
+            return validation(e).then((res) => {
+                if (res.status === true) {
+                        // render the template to the contact container 
+                        form.style.display = 'none';
+                        contactContainer.appendChild(successCln);
+                 } else {
+                     // render the error message to the container
+                        form.style.display = 'none';
+                        contactContainer.appendChild(errorCln);
+                }
+            });
         });
 
     }
+
+
+
+    
 
         // the modal trigger 
         const modal = document.getElementById('modal');
