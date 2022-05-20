@@ -1,26 +1,15 @@
 <div class="flex flex-col lg:flex-row mx-auto mt-12 mb-12">
             <div class="columns-1 p-10 text-center mx-auto">
                 <h1 class="text font-extrabold text-4xl text-blue-900 mt-10">What do I know?</h1>
-                <h2 class="text-lg font-extrabold text-slate-700 mt-4">
-                    Let's face it the digital technologies are growing rapidly and growing in  complexity as we speak, <br/>
-                     we never will know everything.
-                </h2>
-
-              
-
-                <div class="mx-auto">
-                    <img src="/assets//images/svg/brianstorm.svg" alt="Me" class="w-auto h-auto mx-auto" />
-                </div>
-                <p class="text-xl font-semibold text-slate-800 mt-4">
-                    How would I help your team you may ask?  <br />
-                    Here is some of the technologies I know and currently work with.
+                <p class="text-lg font-semibold text-slate-700 mt-4">
+                    I have a wide range of skills, ranging from front-end development to back-end development.
                 </p>
-            </div>
         </div>
+</div>
 
 
 
-        <div class="flex flex-col lg:flex-row lg:flex bg-white shadow-lg border-t border-b border-slate-300 justify-start align-baseline gap-3 p-6 mt-10 mx-auto" id="frontend-panel" id=='half'>
+        <div class=" flex flex-col lg:flex-row lg:flex bg-white shadow-lg border-t border-b border-slate-300 justify-start align-baseline gap-3 p-6 mt-10 mx-auto" id="frontend-panel" id=='half'>
 
                 <div class="flex-1 text-center lg:text-left">
                     <h1 class="text-3xl font-extrabold mt-10 text-blue-900">

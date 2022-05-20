@@ -1,7 +1,7 @@
 
     <!-- hero section for the web application  -->
 
-            <div class="bg-[url('/assets/images/hero.png')] bg-no-repeat bg-cover flex flex-col lg:flex-row bg-zinc-200 shadow-2xl drop-shadow-xl opacity-90 p-32" id="home">
+            <div class="bg-[url('/assets/images/hero.png')] bg-no-repeat bg-cover flex flex-col lg:flex-row bg-zinc-200 shadow-2xl drop-shadow-xl opacity-100 p-32" id="home">
                 <div>
                     <!-- large paper plane -->
                   
